@@ -1,7 +1,6 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 720px;
+    margin: auto;
 }
 
 .stars {
@@ -9,6 +8,42 @@
 }
 
 .star {
-    cursor: pointer;
     font-size: 30px;
+    cursor: pointer;
+}
+
+.star-cont {
+    position: relative;
+    background-color: teal;
+}
+
+.star-tooltip {
+    visibility: hidden;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-10px);
+}
+
+.star-tooltip::after {
+    content: " ";
+    position: absolute;
+    /* background-color: black; */
+    top: 100%;
+    left: 50%;
+    /* transform: translateX(-2.5px); */
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(26, 26, 26) transparent transparent transparent;
+}
+
+.star-tooltip.active {
+    visibility: visible;
 }
