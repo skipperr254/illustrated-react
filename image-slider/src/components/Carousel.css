@@ -1,19 +1,47 @@
-body {
-    height: 100vh;
+.carousel {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+
+.carousel img {
+    flex-shrink: 0;
+    transition: translate 0.5s ease-in-out;
+}
+
+.arrow {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: xx-large;
+    padding: 0 20px;
+    transition: background-color .3s ease-in-out;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.arrow svg {
+    fill: white;
 }
 
 img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
-.body-container {
-    max-width: 720px;
-    width: 100%;
-    height: 400px;
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
 }
