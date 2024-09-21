@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# React projects monorepo 
+A Series of React mini projects until heaven meets earth
+
+### [Accordion](/accordion)
+
+An accordion component like the one you would find in the GitHub FAQ page.
+
+### [Image Carousel](/image_slider)
+
+An image carousel with buttons to move the images left or right.
+
+An accordion component like the one you would find in the GitHub FAQ page.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
